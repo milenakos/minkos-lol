@@ -18,25 +18,27 @@
         border-style: solid;
         width: 600px;
         height: 100px;
+        max-width: 99vw;
+        max-height: auto;
       }
 
       @keyframes hor-movement {
-      from {
-        margin-left: -536px;
+        from {
+          margin-left: calc(-100% + 64px);
+        }
+        to {
+          margin-left: calc(100% - 64px);
+        }
       }
-      to {
-        margin-left: 536px;
-      }
-    }
 
-    @keyframes ver-movement {
-      from {
-        margin-top: 36px;
+      @keyframes ver-movement {
+        from {
+          margin-top: 36px;
+        }
+        to {
+          margin-top: -5px;
+        }
       }
-      to {
-        margin-top: -5px;
-      }
-    }
 
     .dvd {
       animation-name: hor-movement, ver-movement;
