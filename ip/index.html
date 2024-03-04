@@ -22,16 +22,15 @@
       object-fit: contain;
     }
     </style>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
   
   <body style="padding: 0; margin: 0; height:100vh;">
-    <script>
-      $.getJSON("https://api.ipify.org?format=json", function (data) {
-        document.getElementById("ip").innerHTML = data["ip"];
-      });
+    <script type="application/javascript">
+      function getIP(json) {
+        document.getElementById("ip").innerHTML = json.ip;
+      }
     </script>
+    <script type="application/javascript" src="http://ipinfo.io/?format=jsonp&callback=getIP"></script>
 
     <center>
       <img src="https://raw.githubusercontent.com/milena-kos/cat-bot/main/cat.png">
