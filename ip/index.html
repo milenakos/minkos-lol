@@ -3,38 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="https://catbot.milenakos.repl.co/images/cat.ico">
+    <link rel="icon" type="image/x-icon" href="/cat.ico">
     <meta property="og:site_name" content="minkos.lol">
     <meta property="og:title" content="Cat knows your IP">
     <meta property="og:description" content="hehehhe">
     <meta content="https://minkos.lol" property="og:url">
-    <meta content="https://catbot.milenakos.repl.co/images/cat.png" property="og:image">
+    <meta content="https://raw.githubusercontent.com/milena-kos/cat-bot/main/cat.png" property="og:image">
     <meta content="#5865F2" data-react-helmet="true" name="theme-color">
 
     <title>cat knows ur ip</title>
 
     <style>
-    img {
-      position: relative;
-      height: auto;
-      width: 100vw;
-      max-height: 70vh;
-      object-fit: contain;
-    }
+      img {
+        position: relative;
+        height: auto;
+        width: 100vw;
+        max-height: 70vh;
+        object-fit: contain;
+      }
     </style>
   </head>
   
   <body style="padding: 0; margin: 0; height:100vh;">
+    <center>
+      <img src="https://raw.githubusercontent.com/milena-kos/cat-bot/main/cat.png">
+      <h3 id="ip" style="font-size: 12vw;padding: 0;margin: 0;"></h3>
+    </center>
+    
     <script type="application/javascript">
       function getIP(json) {
         document.getElementById("ip").innerHTML = json.ip;
       }
     </script>
     <script type="application/javascript" src="https://api.seeip.org/jsonip?callback=getIP"></script>
-
-    <center>
-      <img src="https://raw.githubusercontent.com/milena-kos/cat-bot/main/cat.png">
-      <h3 id="ip" style="font-size: 12vw;padding: 0;margin: 0;"></h3>
-    </center>
   </body>
 </html>
