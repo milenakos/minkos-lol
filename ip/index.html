@@ -14,27 +14,69 @@
     <title>cat knows ur ip</title>
 
     <style>
-      img {
-        position: relative;
-        height: auto;
-        width: 100vw;
-        max-height: 70vh;
-        object-fit: contain;
+      center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
       }
     </style>
   </head>
   
   <body style="padding: 0; margin: 0; height:100vh;">
     <center>
-      <img src="https://raw.githubusercontent.com/milena-kos/cat-bot/main/cat.png">
-      <h3 id="ip" style="font-size: 12vw;padding: 0;margin: 0;"></h3>
+      <div id="disclaimer">
+        <h1>Warning!</h1>
+        Proceeding will reveal a lot of sensitive information about you.<br><br>
+        <button id="togglee" style="visibility:hidden" onclick="play()">i will not sue the creator</button>
+      </div>
     </center>
     
     <script type="application/javascript">
-      function getIP(json) {
-        document.getElementById("ip").innerHTML = json.ip;
+      var audio = new Audio("https://f.minkos.lol/ipreveal.mp3");
+      var data = "";
+      let prettymappings = {
+          "ip":"IP",
+          "city":"City",
+          "isp":"ISP",
+          "country":"Country",
+          "countryIso":"Country ISO",
+          "postalCode":"Postal Code",
+          "subdivisionIso":"Subdivision ISO",
+          "timeZone":"Timezone",
+          "cityGeonameId":"City Geoname ID",
+          "countryGeonameId":"Country Geoname ID",
+          "subdivisionGeonameId":"Subdivision Geoname ID",
+          "ispId":"ISP ID",
+          "latitude":"Latitude",
+          "longitude":"Longitude"
+      };
+      
+      audio.addEventListener("canplaythrough", (event) => {
+        document.getElementById('togglee').style.visibility = 'visible';
+      });
+      
+      fetch("https://hutils.loxal.net/whois")
+        .then(response => response.json())
+        .then(information => {
+          data = information
+        });
+      
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      
+      async function play() {
+        audio.play();
+        document.getElementById("disclaimer").innerHTML = "<img src=\"https://raw.githubusercontent.com/milena-kos/cat-bot/main/cat.png\">";
+        await sleep(4000);
+        document.getElementById("disclaimer").innerHTML = "";
+        for (var prop in data) {
+          if (prop == "fingerprint") { break; }
+          document.getElementById("disclaimer").innerHTML += prettymappings[prop] + ": " + data[prop] + "<br>";
+          await sleep(500);
+        }
       }
     </script>
-    <script type="application/javascript" src="https://minkos.online/ip"></script>
   </body>
 </html>
