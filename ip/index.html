@@ -55,6 +55,7 @@
       audio.addEventListener("canplaythrough", (event) => {
         document.getElementById('togglee').style.visibility = 'visible';
       });
+      audio.load();
       
       fetch("https://hutils.loxal.net/whois")
         .then(response => response.json())
