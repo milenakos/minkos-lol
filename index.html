@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/cat.ico">
@@ -14,107 +15,135 @@
     <title>minkos.lol</title>
 
     <style>
-      .card {
-        border: 1px;
-        border-style: solid;
-        width: 600px;
-        height: 100px;
-        max-width: 99vw;
-        max-height: auto;
-      }
-
-      @keyframes hor-movement {
-        from {
-          margin-left: calc(-100% + 64px);
+        a {
+            color: #FF00FF;
         }
-        to {
-          margin-left: calc(100% - 64px);
+
+        a:visited {
+            color: #FF00FF;
         }
-      }
 
-      @keyframes ver-movement {
-        from {
-          margin-top: 36px;
+        a:active {
+            color: #FF00FF;
         }
-        to {
-          margin-top: -4px;
+
+        .card {
+            border: 1px;
+            border-style: solid;
+            width: 600px;
+            height: 100px;
+            max-width: 99vw;
+            max-height: auto;
         }
-      }
 
-    .dvd {
-      animation-name: hor-movement, ver-movement;
-      animation-duration: 3.141s, 1.414s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: linear;
-    }
+        @keyframes hor-movement {
+            from {
+                margin-left: calc(-100% + 64px);
+            }
+            to {
+                margin-left: calc(100% - 64px);
+            }
+        }
 
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+        @keyframes ver-movement {
+            from {
+                margin-top: 36px;
+            }
+            to {
+                margin-top: -4px;
+            }
+        }
 
-    .spin {
-      animation: spin 3s linear infinite;
-      position: relative;
-      top: 18px;
-      z-index:0;
-    }
+        .dvd {
+            animation-name: hor-movement, ver-movement;
+            animation-duration: 3.141s, 1.414s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
 
-    .ip {
-      margin: 0;
-      line-height: 100px;
-      position: relative;
-      background: center url(https://cdn.discordapp.com/emojis/1021407051659878491.png), #6E593C;
-      background-size: 3%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+        @keyframes spin {
+            0% {
+            transform: rotate(0deg);
+            }
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+
+        .spin {
+            animation: spin 3s linear infinite;
+            position: relative;
+            top: 18px;
+            z-index:0;
+        }
+
+        .ip {
+            margin: 0;
+            line-height: 100px;
+            position: relative;
+            background: center url(https://cdn.discordapp.com/emojis/1021407051659878491.png), #6E593C;
+            background-size: 3%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
-  </head>
+</head>
 
-  <body style="padding: 0; margin: 0;">
-    <a rel="me" href="https://catgirl.center/@milenakos"></a>
+<body style="padding: 0; margin: 0;">
     <center>
-      <br>
-      <h1>hi</h1>
-      <p>welcome to minkos.lol</p>
-      <br>
-      <div class="card">
-        <a href="/dvd" style="text-decoration: none; color:black;">
-          <div style="height:0px;"><img class="dvd" src="https://cdn.discordapp.com/emojis/1021407051659878491.png"></div>
-          <h2 style="margin:0;line-height:100px">cat dvd</h2>
-        </a>
-      </div>
-      <br>
-      <div class="card">
-        <a href="/spin" style="text-decoration: none; color:black;">
-          <div style="height:0px;"><img class="spin" src="https://cdn.discordapp.com/emojis/1021407051659878491.png"></div>
-          <h2 style="margin:0;line-height:100px;z-index:10;position: relative;">cat spin</h2>
-        </a>
-      </div>
-      <br>
-      <div class="card">
-        <a href="/ip" style="text-decoration: none; color:black;">
-          <h1 class="ip">cat ip reveal</h2>
-        </a>
-      </div>
-      <br>
-      <div class="card">
-        <a href="/truth" style="text-decoration: none; color:black;">
-          <h1 style="margin:0;line-height:100px;color:#ff00ff;">the truth.</h1>
-        </a>
-      </div>
-      <br>
-      <div class="card">
-        <a href="/who-asked" style="text-decoration: none; color:black;">
-          <h1 style="margin:0;line-height:100px;font-size: min(26px, 4.4vw);">COMPLETE LIST OF EVERYONE WHO ASKED</h1>
-        </a>
-      </div>
-    <center>
-  </body>
+        <br>
+        <h1>hi</h1>
+        <p>welcome to minkos.lol</p>
+        <p>im lia milenakos, a silly lesbian catgirl maid of cat bot.</p>
+        <p>here come some links:</p>
+        <a rel="me" href="https://catgirl.center/@milenakos">fedi</a><br>
+        <a rel="me" href="https://github.com/milenakos">github</a><br>
+        <a rel="me" href="https://discord.gg/staring">discord</a><br>
+        <p>here is some clickity clicky silly pages:</p>
+        <div class="card">
+            <a href="/dvd" style="text-decoration: none; color:black;">
+                <div style="height:0px;"><img class="dvd" src="https://cdn.discordapp.com/emojis/1021407051659878491.png"></div>
+                <h2 style="margin:0;line-height:100px">cat dvd</h2>
+            </a>
+        </div>
+        <br>
+        <div class="card">
+            <a href="/spin" style="text-decoration: none; color:black;">
+                <div style="height:0px;"><img class="spin" src="https://cdn.discordapp.com/emojis/1021407051659878491.png"></div>
+                <h2 style="margin:0;line-height:100px;z-index:10;position: relative;">cat spin</h2>
+            </a>
+        </div>
+        <br>
+        <div class="card">
+            <a href="/ip" style="text-decoration: none; color:black;">
+                <h1 class="ip">cat ip reveal</h2>
+            </a>
+        </div>
+        <br>
+        <div class="card">
+            <a href="/truth" style="text-decoration: none; color:black;">
+                <h1 style="margin:0;line-height:100px;color:#ff00ff;">the truth.</h1>
+            </a>
+        </div>
+        <br>
+        <div class="card">
+            <a href="/who-asked" style="text-decoration: none; color:black;">
+                <h1 style="margin:0;line-height:100px;font-size: min(26px, 4.4vw);">COMPLETE LIST OF EVERYONE WHO ASKED</h1>
+            </a>
+        </div>
+        <br>
+        <p>here is some stuff i host on here:</p>
+        <a rel="me" href="https://piped.minkos.lol">piped</a> pls dont abuse<br>
+        <a rel="me" href="https://blog.minkos.lol">blog</a> kinda dead eh<br>
+        <a rel="me" href="https://modding.minkos.lol">cmmm modding guide</a><br>
+        <a rel="me" href="https://tpc.minkos.lol">tpc beta builds</a><br>
+        <a rel="me" href="https://catbot.minkos.lol">cat bot home page</a><br>
+        <br>
+        <p>contact me:</p>
+        email: lia(at)minkos.lol<br> discord: @milenakos<br> signal: @milenakos.69<br>
+        <br><br>
+        <center>
+</body>
+
 </html>
