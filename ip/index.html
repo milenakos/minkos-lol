@@ -8,7 +8,7 @@
     <meta property="og:title" content="Cat knows your IP">
     <meta property="og:description" content="hehehhe">
     <meta content="https://minkos.lol/ip" property="og:url">
-    <meta content="https://raw.githubusercontent.com/milenakos/cat-bot-web/main/images/cat.png" property="og:image">
+    <meta content="https://wsrv.nl/?url=catbot.minkos.lol/images/cat.png" property="og:image">
     <meta content="#5865F2" data-react-helmet="true" name="theme-color">
 
     <title>cat knows ur ip</title>
@@ -22,7 +22,7 @@
       }
     </style>
   </head>
-  
+
   <body style="padding: 0; margin: 0; height:100vh;">
     <center>
       <div id="disclaimer">
@@ -31,7 +31,7 @@
         <button id="togglee" style="visibility:hidden" onclick="play()">i will not sue the creator</button>
       </div>
     </center>
-    
+
     <script type="application/javascript">
       var audio = new Audio("https://f.minkos.lol/ipreveal.mp3");
       var data = "";
@@ -51,25 +51,25 @@
           "latitude":"Latitude",
           "longitude":"Longitude"
       };
-      
+
       audio.addEventListener("canplaythrough", (event) => {
         document.getElementById('togglee').style.visibility = 'visible';
       });
       audio.load();
-      
+
       fetch("https://hutils.loxal.net/whois")
         .then(response => response.json())
         .then(information => {
           data = information
         });
-      
+
       function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
       }
-      
+
       async function play() {
         audio.play();
-        document.getElementById("disclaimer").innerHTML = "<img src=\"https://raw.githubusercontent.com/milenakos/cat-bot-web/main/images/cat.png\">";
+        document.getElementById("disclaimer").innerHTML = "<img src=\"https://wsrv.nl/?url=catbot.minkos.lol/images/cat.png\">";
         await sleep(4000);
         document.getElementById("disclaimer").innerHTML = "";
         for (var prop in data) {
