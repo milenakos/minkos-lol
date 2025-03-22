@@ -1,0 +1,22 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:security@minkos.lol
+Expires: 2030-01-01T00:00:00.000Z
+Encryption: https://github.com/milenakos.gpg
+Preferred-Languages: en, ru
+Canonical: https://minkos.lol/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCAAdFiEEguD1xj/4aAgRk4dTqdNDuMlRdgoFAmfe1yoACgkQqdNDuMlR
+dgogCQwAlvNT4McfsGkWQ3BAo1apYujHwa3y82otCgDess+ZMQE2wglFUW5rxLE8
+GsbYdNd7T6LHtgvMQGRwvNmGUWHSc9VsdVAoezKv5M4wHQNn/ZtfFhxHdGbDzxKQ
+HWOwnm/RgprUjzNs/pLrgBvNu+fmvW1Rfkys0WergHF/JLmYRvqgeC113I3BQ/EL
+jm+nXa8VrBWUKHTZyAvh9+wvLP0P0frKHtBeSILlhPelPVT7WMxTMQA48GJ1Yj6A
+0dABgRbhyoI8HaEqXUMmu1Hy8BfmKk5TeTYRCONZdcUzuRkbag3EJrEDcgw9aFoG
+M2Dhm4Y+XFKXpSnIbXIxujgHZJrVKzS+8HIqF2sdRSEZJbCPCypPZ7RMx5eNeUp4
+Ym2fxJUG/mchQ/lxe0RkxRoyjhJXl9norG1todDWHVnMbU0SvKKEHp7WruGJVu8b
+V5nyQrlq1PcsAyssIYbmnXU7hOdnR1ZQc5a2TGObegiU7FWqWq/MPTKUjoA0HBhd
+PFyC7WoE
+=vlVq
+-----END PGP SIGNATURE-----
